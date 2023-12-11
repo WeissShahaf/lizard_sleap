@@ -7,12 +7,17 @@ Latest model trained on both implanted and non implanted animals. with error of 
 
 implant with color tape - red and green. but no longer used for for tracking.
 
+
+
+
 usage:
 Model = "path\to\models\modelFile.slp"
 
 BatchSize = 512
 
 VideoIndex = 0
+
+
 %track
 sleap-track -m Model --gpu 0 --batch_size BatchSize --video.index VideoIndex --verbosity rich
 
